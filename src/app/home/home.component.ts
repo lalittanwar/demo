@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   
+  flag=false;
+  cor : Array<{dis: number, name: string}>
+  =[{dis:10,name:'angular'},{dis:9,name:'java'},{dis:11,name:'oracle'}]
+
+  country=['india','australia','england']
+
   data="hi";
 
   change(){
@@ -38,6 +44,10 @@ c:number;
   constructor() { }
 
   ngOnInit() {
+    
+    if(this.cor[0].dis>=10){
+      this.flag=true;
+    }
   }
 
 }

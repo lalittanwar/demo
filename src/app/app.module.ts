@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppcustomDirective } from './appcustom.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LoginComponent,
     HomeComponent,
     TopbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    AppcustomDirective
   ],
   imports: [
     BrowserModule,
